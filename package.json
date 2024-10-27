@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "yarn build && npx thirdweb@latest upload dist",
-    "db:push": "drizzle-kit push",
+    "db:push": "drizzle-kit push:pg",
     "db:studio": "npx drizzle-kit studio"
   },
   "dependencies": {
@@ -21,10 +21,12 @@
     "@thirdweb-dev/sdk": "^3",
     "appwrite": "14.0.1",
     "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.32.1",
+    "drizzle-kit": "^0.20.14",
+    "drizzle-orm": "^0.29.5",
     "ethers": "^5.7.2",
     "markdown-to-jsx": "^7.4.7",
     "openai": "^4.52.0",
+    "pg": "^8.13.1",
     "preline": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,7 +40,6 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^2",
     "autoprefixer": "^10.4.13",
-    "drizzle-kit": "^0.23.0",
     "postcss": "^8.4.19",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
